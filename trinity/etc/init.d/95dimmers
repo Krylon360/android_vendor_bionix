@@ -1,0 +1,14 @@
+#!/system/bin/sh
+# enable screen dimmer:
+echo 0 > /sys/class/misc/screendimmer/enabled
+# sets screen time-out to 25 seconds, time is in ms
+echo 25000 > /sys/class/misc/screendimmer/delay
+# enable touchkey backlight dimmer:
+echo 0 > /sys/class/misc/backlightdimmer/enabled
+# sets screen time-out to 5 seconds, time is in ms
+echo 5000 > /sys/class/misc/backlightdimmer/delay
+# enable touch wake:
+echo 0 > /sys/class/misc/touchwake/enabled
+# sets touch wake time-out to 45 seconds, time is in ms
+echo 45000 > /sys/class/misc/touchwake/delay
+
